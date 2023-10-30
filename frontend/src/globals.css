@@ -78,7 +78,8 @@ h3 {
 }
 
 .container {
-    border: 1px solid;
+    /* border: 1px solid; */
+    height: auto;
 }
 
 .main {
@@ -150,7 +151,7 @@ h3 {
 /* == POST-LIST == */
 
 .post-list {
-    height: 100vh; 
+    height: 100%;  
 } 
 
     /* == RIGHT BAR == */

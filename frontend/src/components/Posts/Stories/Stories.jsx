@@ -6,9 +6,8 @@ const Stories = () => {
         <h3>Stories</h3>
         <div className="story-list">
           <Story/>
-          <Story/>
-          <Story/>
-        </div>
+          
+        </div>  
     </div>
   )
 }
