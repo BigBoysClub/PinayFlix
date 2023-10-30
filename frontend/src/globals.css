@@ -85,6 +85,8 @@ h3 {
 .main {
     margin-inline: auto;
     border: none;
+
+    max-width: 1550px;
 }
 
 /* == NAVBAR == */
@@ -93,7 +95,7 @@ h3 {
     padding: 1em;
     position: fixed;
     z-index: 9;
-    width: 100%;
+    width: 200vw !important;
 }
 
 .toggle-icon {
@@ -138,7 +140,7 @@ h3 {
 /* == STORIES == */
 
 .stories {
-    height: 150px;  /* rehas ani kamo na bahala sa height ayaw e (px) aron di mo overflow and content  */
+    height: 250px;
 }
 
     /* == CATEGORIES == */
