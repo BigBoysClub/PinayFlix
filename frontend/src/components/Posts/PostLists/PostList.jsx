@@ -34,7 +34,7 @@ const PostList = () => {
                   <hr />
 
                   <div className="pictures">
-                       <img src="public/cm.jpg" alt="" srcset="" />
+                       <img src="public/cm.jpg" alt="" srcSet="" />
                   </div>
 
                   <div className="captions">
@@ -102,7 +102,7 @@ const PostList = () => {
                   <hr />
 
                   <div className="pictures">
-                       <img src="public/cm.jpg" alt="" srcset="" />
+                       <img src="public/cm.jpg" alt="" srcSet="" />
                   </div>
 
                   <div className="captions">

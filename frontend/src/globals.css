@@ -159,7 +159,7 @@ h3 {
     /* == RIGHT BAR == */
 
 .sidebar-secondary {
-    height: 100vh;
+    /* height: 100vh; */
     width: min(100%, 300px);
 }
 
@@ -176,7 +176,7 @@ h3 {
     .sidebar {
         transform: translateX(-100vw);
         transition: transform .5s;
-        margin-top: 3.8em;
+        margin-top: 3em;
         width: 200px;
         height: 100vh;
         background-color: white;
