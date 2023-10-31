@@ -1,5 +1,4 @@
-
-/* Sidebar */
+/* Left Sidebar */
 
 .sidebar::-webkit-scrollbar {
     display: none;
@@ -101,4 +100,10 @@
     .sidebar {
         top: 5.1em;
     }
+}
+
+/* Right Sidebar */
+
+.sidebar-secondary {
+    background-color: black;
 }

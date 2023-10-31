@@ -1,4 +1,4 @@
-
+import '../Sidebar/SideBar.css';
 
 const Rightbar = () => {
   return (
