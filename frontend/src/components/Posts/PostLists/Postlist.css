@@ -1,175 +1,161 @@
-.postArea{  
-    padding: 15px;
-    border: 2px solid gray;
-    margin: 20px;
-    border-radius: 5px;
-    margin-top:3%;
-}
-.userDetails div {
-display: flex;
-}
-.userDetails {
-display: flex;
-justify-content: space-between;
-}
-.others .icon{
- width: 50%;
-margin: 10px;
-height: 50px;
-}
-.userDetails div > .userName{
-display: block;
-margin: 0;
-}
-.profilePicture img{
-width: 50px;
-height: 50px;
-border-radius: 50%;
-}
-.profilePicture:hover{
-cursor: pointer;
-}
-.others  .icon:hover{
-width:  45px;
-cursor: pointer;
-}
-.userName{
-padding: 5px;
-}
-.userName:hover{
-cursor: pointer;
+
+/* */
+.post-list {
+    align-self: flex-start;
 }
 
-.userName p{
-color: gray;
-font-size: 15px;
+.posts {
+    align-self: flex-start;
+    max-width: 900px;
+    margin-inline: auto; 
+}
+
+/* */
+
+.postArea {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   margin: 3em 0;
 }
 
 
-.pictures {
-padding: 20px;
-}
-.pictures img{
-min-width: 200px;
-max-height: 300px;
- }
-
-.captions {
-padding: 10px;
+.postArea >* {
+  
 }
 
-.headLines{
-display: flex;
-} 
-.headLines .catergory{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100px;
- border-radius: 5px;
- border: 2px solid rgb(130, 109, 71);
-color:rgb(16, 15,rgb(128, 128, 128) 15); 
-}
-.headLines .catergory h3{
-color: rgb(152, 127, 80);
+.user-dets img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
-.headLines .catergory:hover{
-background-color: rgb(233, 197, 149);
-cursor: pointer;
-}
-.headLines .title{
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-.headLines div{
-margin: 10px;
-}
-
-.descriptions {
-padding: 20px;
+.user-dets {
+    padding: .5em;
 }
 
 
-.userInteractions{
-display: flex;
-justify-content: space-between;
-}
-.userInteractions div{ 
-display: flex;  
-padding: 10px;    
+.user-wrapper {
+   
+    display: flex;
+    align-items: center;
+    gap: .5em;
 }
 
-.userInteractions .icon{
-color: gainsboro;
-width: 30px;
-height: 50px;   
-}
-.userInteractions p{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
-align-items: center;
-font-size: 20px;
+.hr-line {
+    margin-top: .5em;
+    outline: 1px solid  #e6e6e6;
 }
 
 
-.userInteractions .likes .icon:hover, .likes:hover{
-color: red;
-cursor: pointer;
+/**/
+
+.post-info {
+    
 }
 
-.userInteractions .comments .icon:hover, .comments:hover{
-color: rgb(80, 77, 77);
-cursor: pointer;
+.img-wrapper {
+    margin-top: .5em;
+    width: 100%;
+    height: 300px;
+
+    background-position: center;
+    background-size: cover;
 }
 
-.userInteractions .shares .icon:hover, .shares:hover{
-color: rgb(71, 47, 253);
-cursor: pointer;
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
- 
-@media (max-width: 500px){
 
-    .headLines .catergory{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-         border-radius: 5px;
-         border: 2px solid rgb(130, 109, 71);
-        color:rgb(16, 15,rgb(128, 128, 128) 15); 
-    }  
-    .title h2{
-        font-size: 30px;
-        }
+.caption {
+    padding: 0 .5em;
+    display:flex;
+    margin-top: 1em;
+}
 
-    .headLines .catergory h3{
-            color: rgb(152, 127, 80);
-            font-size: 15px;
+.postArea article {
+    margin-top: 1em;
+    font-size: .9rem;
+}
+
+
+small {
+    color: grey;
+}
+
+.user-dets .ellip {
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.offset {
+    padding: 1em;
+}
+
+.catergory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+     border-radius: 5px;
+     border: 2px solid rgb(130, 109, 71);
+    color:rgb(16, 15,rgb(128, 128, 128) 15); 
     }
 
-    .descriptions {
-        padding: 10px;
-        }
-        .descriptions p{
-            font-size: small    ;
-        }
+.catergory h3{
+    color: rgb(152, 127, 80);
+}
 
-    .userInteractions{
-        display: flex;
-        
-        }
-    .userInteractions div{ 
-        display: flex;  
-         margin-right: 20px;
-        } 
+/* */
 
-        .userInteractions .icon{
-            color: gainsboro;
-            width: 30px;
-        }
+.reactions {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em 1em 1em;
+}
+
+.reactions .neutral-grey {
+    color: gainsboro;
+    font-size: 1.3rem;
+}
+
+.reactions .neutral-grey:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.reactions p {
+    font-weight: 700;
+}
+
+.reactions span {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+
+/* ============== */
+@media (max-width: 1200px) {
+    .posts {
+        max-width: 100%;        
+    }
+
+    .main {
+        padding: 1em;
+    }
+
+    .sidebar-secondary {
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 780px) {
+    .sidebar-secondary {
+        width: 250px !important;
+    }
 }

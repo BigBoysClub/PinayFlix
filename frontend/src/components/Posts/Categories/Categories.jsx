@@ -7,7 +7,7 @@ const Categories = () => {
   return (
     <div className="categories container">
 
-             <div className="row1">
+            { /* <div className="row1">
                    <div className="userProfile">
                            <img src="public/cm.jpg" alt="" />
                    </div>                
@@ -32,7 +32,7 @@ const Categories = () => {
                         <FontAwesomeIcon className='icon' icon={faSmile} />
                         <p>Feelings/Activities</p>
                  </div>
-             </div>
+  </div> */}
              
     </div>
   )
