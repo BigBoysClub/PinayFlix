@@ -67,7 +67,6 @@ const PostList = () => {
               </span>
               <FontAwesomeIcon  className='ellip' icon={faEllipsis}></FontAwesomeIcon>
             </div>
-            <div className="hr-line"></div>
           </div>       
         
           <div className="post-info">
@@ -115,7 +114,6 @@ const PostList = () => {
               </span>
               <FontAwesomeIcon  className='ellip' icon={faEllipsis}></FontAwesomeIcon>
             </div>
-            <div className="hr-line"></div>
           </div>       
         
           <div className="post-info">

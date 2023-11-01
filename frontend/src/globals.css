@@ -212,7 +212,10 @@ h3 {
         height: 100vh;
         grid-column: 1 / 3;
         border: none;
+    }
 
+    .stories {
+        padding: 0px;
     }
     
     .sidebar {
