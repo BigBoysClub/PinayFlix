@@ -10,6 +10,20 @@ function People() {
             <Person/>
             <Person/>
             <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
+            <Person/>
         </ul>
     </div>
   );
