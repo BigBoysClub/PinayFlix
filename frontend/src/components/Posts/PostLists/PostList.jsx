@@ -19,7 +19,7 @@ const PostList = () => {
               </span>
               <FontAwesomeIcon  className='ellip' icon={faEllipsis}></FontAwesomeIcon>
             </div>
-            <div className="hr-line"></div>
+            {/* <div className="hr-line"></div> */}
           </div>       
         
           <div className="post-info">
@@ -40,7 +40,7 @@ const PostList = () => {
             </div>
           </div>
 
-          <div className="reactions">
+          <div className="reactions overlap-0">
             <span>
               <FontAwesomeIcon className='neutral-grey' icon={faHeart}></FontAwesomeIcon>
               <p>Like</p>

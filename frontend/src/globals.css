@@ -8,6 +8,7 @@
     --secondary-color: ;
     --hover-color: ;
     --ff: 'Roboto', sans-serif;
+    --purple: #6332ca;
 
 }
 
@@ -149,7 +150,7 @@ h3 {
     /* == CATEGORIES == */
 
 .categories {
-    height: 100px;  /* rehas ani kamo na bahala sa height ayaw e (px) aron di mo overflow and content  */
+    
 }
 
 
@@ -290,7 +291,7 @@ h3 {
     }
     
     .sidebar {
-        /* border: 1px solid; */
+        grid-column: 1 / 12;
         position: fixed;
         transform: translateX(0);
         width: 16.2%;
@@ -310,3 +311,4 @@ h3 {
 .main-content {
     gap: 1em;
 }
+

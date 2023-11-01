@@ -12,8 +12,23 @@ const Navbar = () => {
   const toggle = () => {
     const side = document.querySelector('.sidebar')
     const backdrop = document.querySelector('.backdrop')
+    const postArea = document.querySelector('.categories')
+    const reactions = document.querySelector('.reactions')
     side.classList.toggle('show')
     backdrop.classList.toggle('darken')
+    
+    if (postArea.classList.contains('overlap-0')) {
+        postArea.classList.remove('overlap-0')
+        reactions.classList.remove('overlap-0')
+    }
+    else {
+      setTimeout(() => {
+        postArea.classList.add('overlap-0');
+        reactions.classList.add('overlap-0');
+      }, 300);
+  
+    }
+
   }  
 
   return (
