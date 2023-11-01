@@ -147,10 +147,30 @@
 /* Right Sidebar */
 
 .sidebar-secondary {
-    background-color: black;
-}
-
-.sidebar-secondary {
-    height: 100vh; 
+    padding: 1em;
+    height: 100vh;
+    background-color: pink;
     width: min(100%, 300px);
 }
+
+.birthday-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person-info img {
+    height: 100px;
+    width: 100px;
+}
+
+.person-info {
+    line-height: 1.5em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
