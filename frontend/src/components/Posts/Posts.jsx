@@ -1,7 +1,7 @@
 import Stories from "./Stories/Stories"
 import Categories from "./Categories/Categories"
 import PostList from "./PostLists/PostList"
-import Rightbar from "./Rightbar"
+import Rightbar from "./RightBar/Rightbar"
 
 const Posts = () => {
   return (

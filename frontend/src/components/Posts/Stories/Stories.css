@@ -1,12 +1,8 @@
-
-
-
-
 .stories {
     z-index: -1;
     max-width: 100%;
     margin-top: 1em;
-  
+    padding: 1em;
 }
 
  .stories h3 {
@@ -57,23 +53,8 @@
 
 .stories {
   height: 250px;
-  
   overflow: hidden;
-
 }
-
-.main {
-    max-width: 1580px !important;
-}
-
-.navbar {
-    width: 100vw !important;
-}
-
-.sidebar {
-    max-width: 250px;
-}
-
 
 @media (max-width: 1475px) {
     .story:nth-child(6) {
@@ -126,18 +107,6 @@
     
     max-width: 1280px;
 }
-
-
-
-.posts {
-    
-}
-
-.sidebar {
-    
-}
-
-
 
 @media (max-width: 720px) {
     .main {
