@@ -16,9 +16,6 @@ const Stories = () => {
           <Story/>
           <Story/>
           
-          <Story/>
-          <Story/>
-
         </div>
     </div>
   )
