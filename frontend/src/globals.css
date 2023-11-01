@@ -91,45 +91,7 @@ h3 {
     margin-inline: auto;
     border: none;
 
-    max-width: 1550px;
-}
-
-/* == NAVBAR == */
-
-.navbar {
-    padding: 1em;
-    position: fixed;
-    z-index: 9;
-    width: 200vw !important;
-}
-
-.toggle-icon {
-    position: absolute;
-    z-index:  9;
-    font-size: 2rem;
-}
-
-.logo {
-    margin-left: 2em;
-}
-
-
-/* == SIDEBAR == */
-
-.backdrop {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    /* font-size: 20px; */
-}
-
-.sidebar {
-    transform: translateX(-100vw);
-    transition: transform .5s;
-    margin-top: 3.8em;
-    width: 200px;
-    height: 100vh;
-    background-color: white;
+    max-width: 1220px;
 }
 
 /* === POSTS COMPONENTS(src/components/posts) === */ 
@@ -149,6 +111,7 @@ h3 {
 
     /* == CATEGORIES == */
 
+
 .categories {
     
 }
@@ -160,31 +123,6 @@ h3 {
     height: 100%;  
 } 
 
-    /* == RIGHT BAR == */
-
-.sidebar-secondary {
-    /* height: 100vh; */
-    width: min(100%, 300px);
-}
-
-    /* == STORIES  == */
-
-    /* == SIDEBAR == */
-
-    .backdrop {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .sidebar {
-        transform: translateX(-100vw);
-        transition: transform .5s;
-        margin-top: 3em;
-        width: 200px;
-        height: 100vh;
-        background-color: white;
-    }
 
 .story-list {
     display: flex;
@@ -212,7 +150,6 @@ h3 {
 }
 
 .show {
-    
     display: block;
     transform: translateX(0)
 }
@@ -232,10 +169,6 @@ h3 {
         grid-template-columns: repeat(4, minmax(100px, 1fr));
     }
 
-    .navbar {
-        grid-column: 1 / 5;
-    }
-
     .posts {
         grid-column: 1 / 5;
 
@@ -247,9 +180,6 @@ h3 {
         align-items: flex-start;
         justify-content: space-between;
     }
-
-
-   
 }
 
 @media (min-width: 960px) {
@@ -271,10 +201,6 @@ h3 {
         margin-left: unset;
     }
 
-    .navbar {
-        grid-column: 1 / 13;
-    }
-    
     .posts {
         grid-column: 3/ 13;
     }
@@ -285,7 +211,6 @@ h3 {
         position: unset;
         height: 100vh;
         grid-column: 1 / 3;
-        background-color: rgb(255, 255, 254);
         border: none;
 
     }
@@ -295,7 +220,6 @@ h3 {
         position: fixed;
         transform: translateX(0);
         width: 16.2%;
-        margin: unset;
     }
 }
 

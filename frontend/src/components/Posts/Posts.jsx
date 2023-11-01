@@ -1,9 +1,9 @@
 import Stories from "./Stories/Stories"
 import Categories from "./Categories/Categories"
 import PostList from "./PostLists/PostList"
-import Rightbar from "./Rightbar"
 import Modal from "./Categories/PostModal/Modal"
 import { useState } from "react"
+import Rightbar from "./RightBar/Rightbar"
 
 const Posts = () => {
 

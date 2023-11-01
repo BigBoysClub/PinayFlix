@@ -120,7 +120,7 @@ const PostList = () => {
         
           <div className="post-info">
             <div className="img-wrapper" >
-              <img src="public/cm.jpg" alt=""  />
+              <img src="../public/cm.jpg" alt=""  />
             </div>
             <div className="offset">
               <span className='caption'>

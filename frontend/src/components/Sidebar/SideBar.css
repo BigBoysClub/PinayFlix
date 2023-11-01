@@ -5,9 +5,22 @@
 }
 
 .sidebar {
+    max-width: 250px;
     position: relative;
     top: 1.3em;
     overflow-y: scroll;
+    transform: translateX(-100vw);
+    transition: transform .5s;
+    margin-top: 3em;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
 }
 
 .section-title {
@@ -47,7 +60,7 @@
 }
 
 .userInfo {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 /* People Styles */
@@ -91,6 +104,14 @@
     margin: 1em 0em;
 }
 
+.list-ul li:hover {
+    cursor: pointer;
+    color: purple;
+    display: flex;
+    align-items: center;
+    margin: 1em 0em;
+}
+
 .spacer {
     margin-left: 10px;
     min-width: 10px;
@@ -98,12 +119,58 @@
 
 @media screen and (min-width: 1200px) {
     .sidebar {
-        top: 5.1em;
+        top: 1em;
+    }
+
+    .sections {
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+    }
+
+    .profile {
+        height: 70px;
+        width: 70px;
+    }
+
+    .categories-section {
+        margin-left: 1.5em;
+    }
+
+    .people-section {
+        margin-left: 1.5em;
     }
 }
 
 /* Right Sidebar */
 
 .sidebar-secondary {
-    background-color: black;
+    padding: 1em;
+    height: 100vh;
+    background-color: pink;
+    width: min(100%, 300px);
 }
+
+.birthday-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person-info img {
+    height: 100px;
+    width: 100px;
+}
+
+.person-info {
+    line-height: 1.5em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

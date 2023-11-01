@@ -20,11 +20,6 @@
    margin: 3em 0;
 }
 
-
-.postArea >* {
-  
-}
-
 .user-dets img {
     width: 50px;
     height: 50px;
@@ -54,10 +49,6 @@
 
 /**/
 
-.post-info {
-    
-}
-
 .img-wrapper {
     width: 100%;
     height: 300px;
@@ -69,7 +60,7 @@
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .caption {
@@ -103,8 +94,8 @@ small {
     justify-content: center;
     align-items: center;
     width: 100px;
-     border-radius: 5px;
-     border: 2px solid rgb(130, 109, 71);
+    border-radius: 5px;
+    border: 2px solid rgb(130, 109, 71);
     color:rgb(16, 15,rgb(128, 128, 128) 15); 
     }
 
@@ -149,13 +140,9 @@ small {
         max-width: 100%;        
     }
 
-    .main {
+    /* .main {
         padding: 1em;
-    }
-
-    .sidebar-secondary {
-        width: 350px !important;
-    }
+    } */
 }
 
 @media (max-width: 780px) {
