@@ -1,8 +1,12 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 
 const postSchema = mongoose.Schema({
-    name: {
+    creator: {
+        name: String,
+        creatorImage: String
+    },
+    title: {
         type: String,
         required: true
     },
@@ -17,7 +21,20 @@ const postSchema = mongoose.Schema({
     likeCount: {
         type: Number,
         default: 0
-    }
+    },
+    likeBy: {
+        type: [String],
+    },
+    comments: [
+        {
+            text: String,
+            user: {
+                email: String,
+                image: String
+            },
+            createdAt: { type: Date, default: Date.now }
+        }
+    ]
 }, { timestamps: true })
 
 const Posts = mongoose.model('Posts', postSchema)

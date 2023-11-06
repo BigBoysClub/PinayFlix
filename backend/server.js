@@ -5,12 +5,12 @@ import postsRoutes from "./routes/posts.js"
 import userRoutes from "./routes/users.js"
 import dotenv from "dotenv"
 
+dotenv.config()
+
 const app = express()
 
-app.use(express.json())
+app.use(express.json({ limit: '10mb' }))
 app.use(cors())
-
-dotenv.config()
 
 app.use('/api/posts', postsRoutes)
 app.use('/api/user', userRoutes)

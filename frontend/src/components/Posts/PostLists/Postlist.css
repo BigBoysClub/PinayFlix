@@ -160,4 +160,29 @@ small {
 .main {
     max-width: 1220px !important;
     margin: 0 auto !important;
+
+    
+}
+
+
+
+@media (max-width: 470px) {
+    .navbar {
+        min-width: 100%;
+        
+    }
+
+    .backdrop {
+        
+        
+    }
+
+    .darken {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .sidebar {
+        height: 100% !important;
+    }  
 }

@@ -94,7 +94,7 @@
 @media (max-width: 460px) {
         
     .otherTools >* p {
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
     .row1 input {
@@ -105,10 +105,10 @@
 
 
 @media (max-width: 355px) {
-        
+/*         
     .otherTools >* p {
-        font-size: .5rem;
-    }
+        font-size: .755rem;
+    } */
 
 }
 

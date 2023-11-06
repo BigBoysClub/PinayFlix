@@ -11,7 +11,13 @@ import {AiOutlineBell} from 'react-icons/ai';
 import defaultImage from '../../assets/defaultProfile.jpg';
 import './Navbar.css'
 
+import AuthStore from '../../stores/AuthStore';
+import { useLogout } from '../../hooks/useLogout';
+
 const Navbar = () => {
+
+  const { user } = AuthStore()
+  const { logoutUser } = useLogout()
 
   const [showSearch, setshowSearch] = useState(false);
   const [showDrop, setshowDrop] = useState(false);
@@ -21,27 +27,46 @@ const Navbar = () => {
     const side = document.querySelector('.sidebar')
     const backdrop = document.querySelector('.backdrop')
     const postArea = document.querySelector('.categories')
-    const reactions = document.querySelector('.reactions')
+    const reactions = document.querySelectorAll('.reactions')
+    const comments = document.querySelectorAll('.comments')
     side.classList.toggle('show')
     backdrop.classList.toggle('darken')
+
+    // reactions.classList.remove('overlap-0');
+
+   
     
     if (postArea.classList.contains('overlap-0')) {
         postArea.classList.remove('overlap-0')
-        reactions.classList.remove('overlap-0')
+        // reactions.classList.remove('overlap-0')
+        reactions.forEach((reaction) => {
+          return reaction.classList.remove('overlap-0');
+        })
+        
+        comments.forEach((reaction) => {
+          return reaction.classList.remove('pos-relative');
+        })
     }
     else {
-      setTimeout(() => {
-        postArea.classList.add('overlap-0');
-        reactions.classList.add('overlap-0');
-      }, 300);
-  
+
+        setTimeout(() => {
+          postArea.classList.add('overlap-0');
+          reactions.forEach((reaction) => {
+            return reaction.classList.add('overlap-0');
+          })
+          comments.forEach((reaction) => {
+            return reaction.classList.add('pos-relative');
+          })
+        }, 300)
     }
 
+   
+    console.log(reactions)
   }  
 
 
   return (
-    <header className="navbar container">
+    <header className="navbar container"> 
 
 
       {showSearch && 
@@ -77,7 +102,7 @@ const Navbar = () => {
         </div>
         </li>
 			<li className='list-items'>
-				  <img onClick={() => setshowDrop(!showDrop)} className='profile-list' src={defaultImage} alt="profile picture" />
+				  <img onClick={() => setshowDrop(!showDrop)} className='profile-list' src={ !user ? defaultImage : user.image} alt="profile picture" />
 			</li>
 		</ul>
 
@@ -96,7 +121,7 @@ const Navbar = () => {
         <ul className='drop-list'>
         <li className='item'><FaRegSun/> Settings </li>
         <li className='item'><MdHelpOutline/> Help </li>
-        <li className='item'><MdLogout/> Logout </li>
+        <li  onClick={logoutUser} className='item'><MdLogout/> Logout </li>
         </ul>
       </div>
     }
