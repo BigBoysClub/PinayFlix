@@ -1,4 +1,4 @@
-import '../Sidebar.css';
+import '../../Sidebar/SideBar.css';
 import Person from './Person';
 
 function People() {

@@ -1,5 +1,5 @@
 import DefaultImage from '../../../assets/defaultProfile.jpg';
-import '../Sidebar.css';
+import '../../Sidebar/SideBar.css';
 import AuthStore from '../../../stores/AuthStore';
 
 const Profile = () => {

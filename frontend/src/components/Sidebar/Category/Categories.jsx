@@ -3,7 +3,7 @@ import { TbBrandAmongUs } from "react-icons/tb";
 import {GrMusic} from "react-icons/gr";
 import {GrMysql} from "react-icons/gr";
 
-import '../Sidebar.css';
+import '../../Sidebar/SideBar.css';
 
 function Categories() {
   return (
